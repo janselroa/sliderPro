@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background: no-repeat cover;
+    background-size: cover;
+    background-image: url("../img/nature.jpg");
+    transition: background, 0.8s;
+}
+
+.container {
+    width: 200px;
+    padding: 20px 30px;
+    margin: 50px;
+    background-color: #fff;
+    opacity: 0.8;
+    transition: all 2s;
+}
+
+h1 {
+    text-align: center;
+}
