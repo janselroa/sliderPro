@@ -20,3 +20,23 @@ body {
 h1 {
     text-align: center;
 }
+
+.container-buttons {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+}
+
+button {
+    width: 80px;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}

@@ -1,3 +1,5 @@
+const btnNext = document.querySelector("#next");
+const btnPrevious = document.querySelector("#previous");
 const title = document.querySelector("h1");
 const paragraph = document.querySelector("p");
 
@@ -15,18 +17,46 @@ const datos = [{
         image: "./assets/img/rain.jpg"
     },
     {
+        Title: "City View",
+        description: text.split(' ').slice(0, 20).join(" "),
+        image: "./assets/img/city.jpg"
+    },
+    {
         Title: "Nature View",
         description: text.split(' ').slice(0, 10).join(" "),
         image: "./assets/img/nature.jpg"
     },
+
+    {
+        Title: "Park View",
+        description: text.split(' ').slice(15, 35).join(" "),
+        image: "./assets/img/park.jpg"
+    },
+    {
+        Title: "Space View",
+        description: text.split(' ').slice(20, 30).join(" "),
+        image: "./assets/img/space.jpg"
+    },
 ];
+
 var count = 0;
 const nextPage = () => {
-    if (count === 3) count = 0;
+    count++;
+    editPage()
+}
+const prevPage = () => {
+    count -= 1;
+    editPage()
+}
+
+const editPage = () => {
+    if (count > 5 || count < 0) count = 0;
     let data = datos[count];
     title.textContent = data.Title,
         paragraph.textContent = data.description,
         document.body.style.backgroundImage = `url("${data.image}")`
-    count++;
 }
-setInterval('nextPage()', 2500)
+
+setInterval('nextPage()', 4000)
+btnNext.addEventListener('click', nextPage)
+btnPrevious.addEventListener('click', prevPage)
