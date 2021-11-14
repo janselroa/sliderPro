@@ -1,2 +1,2 @@
 ### slider pro
-[![previw](./previw.gif)](janselroa.github.io/sliderPro/)
+[![previw](./previw.gif)](https://janselroa.github.io/sliderPro/)
