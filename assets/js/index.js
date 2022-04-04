@@ -33,10 +33,20 @@ const datos = [{
         image: "./assets/img/park.jpg"
     },
     {
+        Title: "Beach View",
+        description: text.split(' ').slice(10, 30).join(" "),
+        image: "./assets/img/playa.jpg"
+    },
+
+    {
+        Title: "Mountain View",
+        description: text.split(' ').slice(15, 35).join(" "),
+        image: "./assets/img/Mountain.jpeg"
+    }, {
         Title: "Space View",
         description: text.split(' ').slice(20, 30).join(" "),
         image: "./assets/img/space.jpg"
-    },
+    }
 ];
 
 var count = 0;
@@ -50,7 +60,7 @@ const prevPage = () => {
 }
 
 const editPage = () => {
-    if (count > 5 || count < 0) count = 0;
+    if (count > 7 || count < 0) count = 0;
     let data = datos[count];
     title.textContent = data.Title,
         paragraph.textContent = data.description,
