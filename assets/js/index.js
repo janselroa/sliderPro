@@ -7,8 +7,10 @@ const text = `
 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptatum consectetur odio? Delectus totam cumque molestias inventore ipsa quos, repellendus nam. Quisquam, ullam tempore. Eos incidunt placeat doloremque similique earum.`
 
 const datos = [{
-        Title: "Ocean View",
-        description: text.split(' ').slice(10, 20).join(" "),
+        Title: "Paisaje Oceanico",
+        description:`Los océanos son grandes cantidades de agua distribuidas a lo largo y ancho del planeta. 
+        Por lo general, separan a dos o más continentes.
+        Son considerados como «la superficie más grande del mundo» y son el hogar de millones de especies acuáticas.`,
         image: "./assets/img/ocean.jpg"
     },
     {
@@ -22,8 +24,10 @@ const datos = [{
         image: "./assets/img/city.jpg"
     },
     {
-        Title: "Nature View",
-        description: text.split(' ').slice(0, 10).join(" "),
+        Title: "Naturaleza",
+        description: `Un espacio natural, paisaje natural o ambiente natural,
+        es una parte del territorio de la Tierra que no se encuentra 
+        modificado por la acción del ser humano`,
         image: "./assets/img/nature.jpg"
     },
 
