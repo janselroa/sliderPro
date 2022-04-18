@@ -14,13 +14,17 @@ const datos = [{
         image: "./assets/img/ocean.jpg"
     },
     {
-        Title: "Rain View",
-        description: text.split(' ').slice(21, 30).join(" "),
+        Title: "Lluvia",
+        description: `
+            La lluvia Los científicos y expertos del clima, dicen que la lluvia se produce cuando el vapor de agua se condensa (pasar de gas a líquido)
+             y se vuelve gotas que contienen las nubes y caen, mogando con agua la tierra y dando vida la tierra
+        `,
         image: "./assets/img/rain.jpg"
     },
     {
-        Title: "City View",
-        description: text.split(' ').slice(0, 20).join(" "),
+        Title: "Cuidades",
+        description: `Las ciudades grandes extecuturas diseñadas y construidas
+         por el ser humano forman un paisaje artificial bastante agradable a la vista`,
         image: "./assets/img/city.jpg"
     },
     {
@@ -32,23 +36,24 @@ const datos = [{
     },
 
     {
-        Title: "Park View",
-        description: text.split(' ').slice(15, 35).join(" "),
+        Title: "Parques",
+        description: `Los parques son espacios naturalez designados por el ser humano`,
         image: "./assets/img/park.jpg"
     },
     {
         Title: "Beach View",
-        description: text.split(' ').slice(10, 30).join(" "),
+        description: `Las playas lugares muy agradables, visitados y populares por estar en la horilla del mar y la arena
+        forman paisajes muy bonitos`,
         image: "./assets/img/playa.jpg"
     },
 
     {
-        Title: "Mountain View",
-        description: text.split(' ').slice(15, 35).join(" "),
+        Title: "Montañas",
+        description: `Montañas formaciones naturalez de tierra y rocas formas muy hermonos paisajes`,
         image: "./assets/img/Mountain.jpeg"
     }, {
         Title: "Space View",
-        description: text.split(' ').slice(20, 30).join(" "),
+        description: `El spacio exterior lugar fuera de nuestro pleneta`,
         image: "./assets/img/space.jpg"
     }
 ];
